@@ -1,0 +1,29 @@
+package access.ex;
+
+public class MaxCounter {
+
+    int count;
+    int max;
+
+    public MaxCounter(int max) {
+        this.max = max;
+    }
+
+    public void increment() {
+        
+        // 검증 로직
+        if (count >= max) {
+            System.out.println("최대값보다 증가할 수 없습니다. 최대값 = " + max);
+            return;
+        }
+        
+        // 실행 로직
+        count++;
+        System.out.println("count 증가. count = " + count);
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+}
