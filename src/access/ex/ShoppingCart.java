@@ -20,8 +20,20 @@ public class ShoppingCart {
 
     public void displayItems() {
         for (int i = 0; i < count; i++) {
-            System.out.println("상품명 : " + items[i].getProductName() + ", 가격 : " + items[i].getPrice() + ", 수량 : " + items[i].getQuantity());
+            System.out.println("상품명 : " + items[i].getProductName() + ", 가격 : " + items[i].getTotalPrice());
         }
+
+        System.out.println("전체 가격 합 : " + calculateTotalPrice());
+    }
+
+    private int calculateTotalPrice() {
+        int totalPrice = 0;
+        for (int i = 0; i < count; i++) {
+            Item item = items[i];
+            totalPrice += item.getTotalPrice();
+        }
+
+        return totalPrice;
     }
 
 }

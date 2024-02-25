@@ -15,11 +15,7 @@ public class Item {
         return productName;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public int getQuantity() {
-        return quantity;
+    public int getTotalPrice() {
+        return price * quantity;
     }
 }
