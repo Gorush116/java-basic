@@ -15,5 +15,7 @@ public class DecoDataMain {
         data2.instanceCall();
 
         // static method에서는 인스턴스 변수를 사용할 수 없다. static은 method 영역에 저장된다(heap 영역 아님)
+
+        // 개발자는 항상 어떻게 더 나은 방법에 대해 고미하여야 한다.
     }
 }
