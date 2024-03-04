@@ -1,10 +1,17 @@
 package static2;
 
+import static static2.DecoData.*;
+
 public class DecoDataMain {
 
     public static void main(String[] args) {
         System.out.println("1. 정적 호출");
-        DecoData.staticCall();
+        staticCall();
+        staticCall();
+        staticCall();
+        staticCall();
+        staticCall();
+        staticCall();
 
         System.out.println("2. 인스턴스 호출1");
         DecoData data1 = new DecoData();
@@ -16,6 +23,15 @@ public class DecoDataMain {
 
         // static method에서는 인스턴스 변수를 사용할 수 없다. static은 method 영역에 저장된다(heap 영역 아님)
 
-        // 개발자는 항상 어떻게 더 나은 방법에 대해 고미하여야 한다.
+        // 개발자는 항상 어떻게 더 나은 방법에 대해 고민하여야 한다.
+
+        // 추가
+        // 인스턴스를 통한 접근
+        DecoData data3 = new DecoData();
+        data3.staticCall();
+
+        // 클래스를 통한 접근
+        staticCall();
+
     }
 }
