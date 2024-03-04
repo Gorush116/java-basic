@@ -33,7 +33,7 @@ public class MathArrayUtils {
     }
 
     public static int max(int[] array) {
-        int max = 0;
+        int max = array[0];
 
         for (int i : array) {
             if (max < i) {
