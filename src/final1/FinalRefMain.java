@@ -2,7 +2,7 @@ package final1;
 
 public class FinalRefMain {
     public static void main(String[] args) {
-        final Data data = new Data();
+        final Data data = new Data(); // data의 참조값이 변하지 않도록 final 선언
 
         // final로 선언한 인스턴스는 재할당 불가
         // data = new Data(); // cannot assign a value to final variable data
